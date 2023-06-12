@@ -1,5 +1,4 @@
 import "./Solo.css";
-import relax1 from "../../assets/music/relax1.mp4";
 import { useEffect, useState } from "react";
 import { useStopwatch } from "react-timer-hook";
 import { v4 as uuidv4 } from "uuid";
@@ -10,10 +9,10 @@ import StopIcon from "@mui/icons-material/Stop";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 
 function Solo(): JSX.Element {
-  const [audio] = useState(new Audio(relax1));
   const [tasks, setTasks] = useState<any[]>([]);
   let [completedTasksLength, setCompletedTasksLength] = useState(0);
   const [taskData, setTaskData] = useState("");
+
   const { seconds, minutes, hours, start, pause, reset } = useStopwatch({
     autoStart: true,
   });
@@ -33,12 +32,7 @@ function Solo(): JSX.Element {
       setCompletedTasksLength(completedTasksCount);
     }
 
-    audio.play();
-    return () => {
-      audio.pause();
-      audio.currentTime = 0;
-    };
-  }, [audio]);
+  }, []);
 
   const formattedTime = `${hours.toString().padStart(2, "0")}:${minutes
     .toString()
