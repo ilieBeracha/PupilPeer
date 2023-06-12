@@ -1,0 +1,29 @@
+
+.ParticipantsPopper .MuiBox-root .css-qxh7fn{
+
+    width: max-content !important;
+}
+
+
+.UserRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.UserRow img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.ParticipantsHeader{
+    margin: 0;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+}

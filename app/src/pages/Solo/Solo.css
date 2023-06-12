@@ -1,0 +1,183 @@
+.Solo {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(../../assets/images/view.jpg); */
+  /* background-size: cover; */
+  position: relative;
+}
+
+.SoloInfos {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.SoloInfo {
+  width: 300px;
+  height: max-content;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: var(--gradient-background);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.SoloInfoTimer {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SoloInfoTimer span {
+  font-size: 60px;
+}
+
+.SoloInfoTimerButtons {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.SoloInfoTimerButtons button {
+  background: white;
+}
+
+.SoloTasks {
+  width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  background: var(--gradient-background);
+  box-sizing: border-box;
+  padding: 20px 10px;
+  gap: 10px;
+}
+
+.SoloTasksHeader {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.SoloTasksHeader span {
+  font-size: 13px;
+}
+
+.SoloTasksForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.SoloTasksForm input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.SoloTasksBoard {
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+
+.SoloTasksCount {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SoloTasksCount p {
+  font-size: 40px;
+  margin: 0;
+}
+
+.Task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.Task p {
+  margin: 0;
+}
+
+.TasksDisplay{
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.TasksDisplay input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.TasksDisplay input[type="checkbox"]:checked {
+  background-color: green;
+  border-color: #5faef1;
+}
+
+.TasksDisplay input[type="checkbox"]:checked::before {
+  /* content: "\u2713"; */
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.DeleteTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.AddTaskButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.SoloInfoTimerButtonsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

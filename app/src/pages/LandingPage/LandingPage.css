@@ -1,0 +1,112 @@
+.LandingPage {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.LandingPageWelcome {
+  /* min-height: 90vh; */
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  /* background: var(--gradient-background); */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.LandingPageWelcome h3 {
+  font-size: 40px;
+  /* color: cadetblue; */
+  color: black;
+  margin: 0;
+}
+
+.LandingPageWelcome p {
+  font-size: 20px;
+}
+
+#gradiendSen {
+  background: var(--gradient-background);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.LandingPageWelcomeSen {
+  min-height: 94vh;
+  box-sizing: border-box;
+  padding: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .LandingPageWelcomeSenHeader{
+  border-bottom: 1px solid black;
+} */
+
+.LandingPageWelcomeSen p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.LandingPageWelcomeAuth {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.LandingPageWelcomeSenFeatures {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LandingPageWelcomeSenFeature {
+  margin-top: 30px;
+  width: 40%;
+  min-width: 450px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LandingPageWelcomeSenFeatureImage {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.LandingPageWelcomeSenFeature img {
+  width: 60px;
+}
+
+.LandingPageWelcomeSenFeatureText {
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

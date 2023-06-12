@@ -1,0 +1,133 @@
+.Room {
+  width: 280px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.RoomHeader {
+  width: 100%;
+  height: 40%;
+  background: var(--gradient-background);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+
+}
+
+.RoomHeader p,
+.RoomHeaderTeacher p {
+  color: white;
+}
+
+.RoomMain {
+  width: 100%;
+  height: 60%;
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  
+}
+
+.Room p {
+  margin: 0;
+}
+
+.RoomName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.SubCategoryName {
+  font-size: 14px;
+  color: #666;
+}
+
+.RoomMaxParticipants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.GroupsIcon {
+  font-size: 20px;
+  color: #888;
+  
+}
+
+.ParticipantsCount {
+  font-size: 14px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.RoomStartTime {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.StartTime {
+  font-size: 14px;
+  color: #333;
+}
+
+.RoomJoin {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.JoinButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--btnColor);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.JoinButtonTeacher{
+  border: 3px solid var(--secColor);
+}
+
+.JoinButton button{
+  cursor: pointer;
+
+}
+
+.JoinButton:hover {
+  color: white;
+}
+
+.RoomSchoolIcon{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  /* background: var(--gradient-background-2); */
+  background-color: var(--secColor);
+  padding: 4px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1040px) {
+  .Room{
+    width: 100%;
+  }
+}

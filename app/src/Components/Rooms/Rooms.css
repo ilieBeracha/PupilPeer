@@ -1,0 +1,15 @@
+.SubCategoriesBtns{
+    width: 100%;
+    box-sizing: border-box;
+    padding:20px 0px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ClearFiltersBtn{
+    background-color: var(--btnColor);
+    color: white;
+}
+
+

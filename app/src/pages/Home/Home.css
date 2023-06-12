@@ -1,0 +1,14 @@
+.Home {
+	display: flex;
+}
+
+.HomeMain{
+    width: 94vw;
+    min-height: 100vh;
+}
+
+.HomeContent{
+    width: 100%;
+    height: 94%;
+    /* background-color: aqua; */
+}
