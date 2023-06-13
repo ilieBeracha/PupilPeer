@@ -6,6 +6,7 @@
 .RoomsContent {
   width: 100%;
   height: 90%;
+  margin-bottom: 20px;
 }
 
 .css-8atqhb {
@@ -22,6 +23,12 @@
   box-sizing: border-box;
   padding: 10px 0px;
 }
+
+/* .displayRoomsDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
 .HomeTabSearch{
     width: 30%;
 }
