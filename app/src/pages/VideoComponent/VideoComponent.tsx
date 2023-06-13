@@ -19,7 +19,6 @@ import ChatGptNotes from "../../Components/ChatGptNotes/ChatGptNotes";
 import { socket } from "../../services/SocketService";
 import { ChatInterface } from "../../models/ChatInterface";
 
-
 const VideoComponent = () => {
   const url = `${window.location.origin}${window.location.pathname}`;
   const navigate = useNavigate();
@@ -246,12 +245,7 @@ const VideoComponent = () => {
       {isHost && meetInfoPopUp ? (
         <MeetingInfo url={url} setMeetInfoPopup={setMeetInfoPopup} />
       ) : null}
-      {
-        isChatGptListening?
-        <ChatGptNotes />
-        :
-        <></>
-      }
+      {isChatGptListening ? <ChatGptNotes /> : <></>}
       <div className="VideoComponentContent">
         <div className="screenShareDiv">
           {screenShareStream && (
@@ -280,12 +274,14 @@ const VideoComponent = () => {
         <div className="VideoComponentControls">
           <div className="VideoComponentControlsMicVid">
             {isHost ? (
-              <p
-                onClick={()=> setIsChatGptListening(!isChatGptListening)}
-                className="VideoComponentControlsChatGpt"
-              >
-                <ChecklistIcon fontSize="medium" />
-              </p>
+              <div className="VideoComponentControlsMicVidChat">
+                <p
+                  onClick={() => setIsChatGptListening(!isChatGptListening)}
+                  className="VideoComponentControlsChatGpt"
+                >
+                  <ChecklistIcon fontSize="medium" />
+                </p>
+              </div>
             ) : (
               <></>
             )}

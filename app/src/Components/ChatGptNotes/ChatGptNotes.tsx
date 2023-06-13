@@ -25,7 +25,7 @@ const ChatGptNotes = () => {
       SpeechRecognition.stopListening();
     };
   }, [browserSupportsSpeechRecognition]);
-``
+  ``;
   useEffect(() => {
     if (transcript.length >= 100) {
       openaiService.chatGptListener(transcript).then((res) => {
@@ -39,19 +39,19 @@ const ChatGptNotes = () => {
 
   return (
     <div className="ChatGptNotes">
-      <div className="ChatGptNotesHeader">
-        <p>ChatGPT is taking notes</p>
-        <img src={waveSounds} alt="" />
+      <div className="ChatGptNotesDiv">
+        <div className="ChatGptNotesHeader">
+          <p>ChatGPT is taking notes</p>
+          <img src={waveSounds} alt="" />
+        </div>
+        <ul>
+          {notes ? (
+            notes.map((note: any, index: number) => <li key={index}>{note}</li>)
+          ) : (
+            <></>
+          )}
+        </ul>
       </div>
-      <p>
-        {notes ? (
-          notes.map((note: any, index: number) => (
-            <p key={index}>{note}</p>
-          ))
-        ) : (
-          <></>
-        )}
-      </p>
     </div>
   );
 };
