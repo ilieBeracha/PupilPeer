@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { toastAlerts } from "../../helpers/toastAlerts";
 import AddIcon from "@mui/icons-material/Add";
 import Box from "@mui/material/Box";
-import { Checkbox } from "@mui/material";
+import { Checkbox, Switch } from "@mui/material";
 
 const style = {
   position: "absolute" as "absolute",
@@ -90,15 +90,17 @@ export default function CreateRoom() {
         <Box sx={style}>
           <div className="checkboxIsTeacherDiv">
             <label htmlFor="">{"As a teacher"}</label>
-            <Checkbox
+            <Switch color="warning" onChange={() => setIsTeacherRoom(!isTeacherRoom)}/>
+
+            {/* <Checkbox
               sx={{
                 color: "orange",
                 "&.Mui-checked": {
                   color: "orange",
                 },
               }}
-              onChange={() => setIsTeacherRoom(!isTeacherRoom)}
-            />
+              
+            /> */}
           </div>
           <form
             onSubmit={handleSubmit(StartMeeting)}
